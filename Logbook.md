@@ -18,3 +18,7 @@ docker-compose up
 
 Now the app will be accessible at http://localhost:8080/
 
+## Problem: no global babylon
+
+How can I make a globally defined BABYLON available inside the component vue file?
+
