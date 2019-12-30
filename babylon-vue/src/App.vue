@@ -1,18 +1,10 @@
 <template>
   <div id="app">
-    <HelloWorld msg="This is live"/>
+    <canvas id="renderCanvas" touch-action="none"></canvas>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
 <style>
@@ -22,6 +14,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
 }
 </style>

@@ -3,7 +3,18 @@
 Why is the docker file multistage? So we can bootstrap:
 
 ```
+# first we can only build the generic image
 docker-compose build vue-cli
+
+# then we can use it to generate the project
 docker-compose run --rm vue-cli vue create .
+
+# finally we can build the rest
+docker-compose build
+
+# and start the environment
+docker-compose up
 ```
+
+Now the app will be accessible at http://localhost:8080/
 
