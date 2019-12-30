@@ -24,6 +24,8 @@ How can I make a globally defined BABYLON available inside the component vue fil
 
 Huh, but it already exists: https://github.com/Beg-in/vue-babylonjs
 
+Documented here: https://vue-babylonjs.com/#/home
+
 How to add this to my project?
 
 ```
