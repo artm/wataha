@@ -72,6 +72,17 @@ SG is the world state. Babylon has a JSON based scene graph format. What does th
 
 Let's start with a sample html that renders something. Then remove irrelevant bits for now.
 
+What about live reload? Could that be helpful? Isn't that live coding? 
+
+The problem is that it will probably reload the whole page because there is just one canvas there. It makes sense to learn about the live reload systems and hack something on top of them.
+
+Example: vue hot reload (https://vue-loader.vuejs.org/guide/hot-reload.html#state-preservation-rules)
+
+For this to work would want to somehow map vue to the game engine. Here is an example of something like that:
+https://alligator.io/vuejs/vue-html5-canvas/
+
+So, the idea is to have a vue hot reload based setup with components that create and control the scene graph.
+
 # Initial project
 
 ## A breathing cube
