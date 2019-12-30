@@ -22,3 +22,10 @@ Now the app will be accessible at http://localhost:8080/
 
 How can I make a globally defined BABYLON available inside the component vue file?
 
+Huh, but it already exists: https://github.com/Beg-in/vue-babylonjs
+
+How to add this to my project?
+
+```
+docker-compose run --rm app yarn add vue-babylonjs
+```
