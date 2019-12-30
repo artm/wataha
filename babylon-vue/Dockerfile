@@ -7,5 +7,5 @@ FROM vue-cli AS app
 COPY package.json yarn.lock .
 RUN yarn install
 COPY . .
-CMD ["yarn", "run", "dev"]
+CMD ["yarn", "serve"]
 
