@@ -9,7 +9,7 @@ Scene(fog="exp" fogColor="#000" :fogDensity=".15")
     RectGrid(:size="[5,5,5]" :spread="1.5")
       template(#default="grid")
         Box
-          Material(:diffuse="grid.cell.dv" :metallic=".3" :alpha=".9")
+          Material(:diffuse="grid.cell.dv" :metallic="0.75" :alpha=".5")
 </template>
 
 <script>
