@@ -1,11 +1,12 @@
 <template lang="pug">
-CubeDemo
+HotAnimationIssue
 </template>
 
 <script>
 import CubeDemo from "./components/CubeDemo.vue"
+import HotAnimationIssue from "./components/HotAnimationIssue.vue"
 
 export default {
-  components: { CubeDemo }
+  components: { CubeDemo, HotAnimationIssue }
 }
 </script>
