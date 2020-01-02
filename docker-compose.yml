@@ -1,18 +1,8 @@
 version: "3.7"
 services:
-    vue-cli:
-        build: 
-            context: .
-            target: vue-cli
-        volumes:
-            - .:/app
-        command: /usr/bin/true
-    app:
-        build: 
-            context: .
-            target: app
-        volumes:
-            - .:/app
-        ports:
-            - 8080:8080
-    
+  node:
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - 8080:8080
