@@ -1,3 +1,12 @@
-# Wataha
+# cube-demo
 
-Experiments towards live coding generative visuals.
+cube-demo.
+
+Built with [A-Frame](https://aframe.io).
+
+## Setup
+
+```sh
+npm install
+npm run start
+```
