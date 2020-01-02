@@ -4,19 +4,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "live-server --port=7000",
-    "deploy": "ghpages"
+    "start": "live-server --port=8080"
   },
   "devDependencies": {
-    "ghpages": "0.0.3",
     "live-server": "^1.2.0"
   },
-  "keywords": [
-    "aframe",
-    "aframe-example",
-    "aframe-boilerplate",
-    "aframe-scene",
-    "webvr",
-    "vr"
-  ]
+  "keywords": []
 }
