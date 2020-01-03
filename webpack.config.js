@@ -8,10 +8,28 @@ module.exports = {
   devtool: "inline-source-map",
   devServer: {
     host: "0.0.0.0",
-    contentBase: "./dist"
+    contentBase: "./dist",
+    hot: true,
+  },
+  module: {
+    rules: [
+      {
+        test: /\.js/,
+        exclude: /(node_modules)/,
+        use: ["aframe-super-hot-loader"]
+      },
+      {
+        test: /\.html/,
+        exclude: /(node_modules)/,
+        use: ['aframe-super-hot-html-loader']
+      }
+    ],
   },
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
   },
-}
+  plugins: [
+  ],
+};
+

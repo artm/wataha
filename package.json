@@ -9,6 +9,9 @@
   },
   "keywords": [],
   "dependencies": {
+    "aframe-super-hot-html-loader": "^2.1.0",
+    "aframe-super-hot-loader": "^1.7.0",
+    "diff-dom": "^4.1.6",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1"
