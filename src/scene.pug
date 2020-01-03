@@ -1,0 +1,8 @@
+a-scene(background="color: black" fog="type: exponential; color: black; density: 0.01")
+  a-camera(position="0 0 10")
+  a-entity(animation="property: rotation; to: 0 0 360; loop: true; dur: 30000; easing: linear")
+    a-entity(animation="property: rotation; to: 0 360 0; loop: true; dur: 60000; easing: linear")
+      each x in [-4, -2, 0, 2, 4]
+        each y in [-4, -2, 0, 2, 4]
+          each z in [-4, -2, 0, 2, 4]
+            a-box(position=`${x} ${y} ${z}` metalness="0.9" roughness="0.7" color="#f7f")

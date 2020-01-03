@@ -14,15 +14,20 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js/,
-        exclude: /(node_modules)/,
-        use: ["aframe-super-hot-loader"]
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: ["babel-loader", "aframe-super-hot-loader"]
       },
       {
-        test: /\.html/,
-        exclude: /(node_modules)/,
-        use: ['aframe-super-hot-html-loader']
-      }
+        test: /\.html$/,
+        exclude: /node_modules/,
+        use: ["aframe-super-hot-html-loader"]
+      },
+      {
+        test: /.pug$/,
+        exclude: /node_modules/,
+        use: ["aframe-super-hot-html-loader", "pug-html-loader"]
+      },
     ],
   },
   output: {
@@ -32,4 +37,3 @@ module.exports = {
   plugins: [
   ],
 };
-

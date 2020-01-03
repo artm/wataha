@@ -1,3 +1,1 @@
-import "./scene.html"
-
-console.log("hi there..")
+import "./scene.pug"
