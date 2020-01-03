@@ -5,12 +5,12 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "live-server --port=8080"
+    "start": "webpack-dev-server"
   },
   "keywords": [],
   "dependencies": {
-    "live-server": "^1.2.0",
     "webpack": "^4.41.5",
-    "webpack-cli": "^3.3.10"
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
   }
 }
