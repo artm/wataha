@@ -1,6 +1,7 @@
 {
   "name": "cube-demo",
   "description": "cube-demo.",
+  "private": true,
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
